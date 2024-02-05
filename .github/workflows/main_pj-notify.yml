@@ -6,7 +6,10 @@ name: Build and deploy Python app to Azure Web App - pj-notify
 
 on:
   push:
-    branches:
+   paths:
+      - 'test.py'
+      - 'requirements.txt'
+   branches:
       - main
   workflow_dispatch:
 
